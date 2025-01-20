@@ -7,32 +7,24 @@ import HomePage from "./pages/Home.page";
 import FAQPage from "./pages/FAQ.page";
 import AboutUsPage from "./pages/AboutUs.page";
 import ContactUsPage from "./pages/ContactUs.page";
+import CoinPage from "./pages/coin.page";  
 function App() {
   return (
     <div>
-      {/* navbar */}
       <NavbarComponent />
-
-      {/* wrapper */}
       <div className="wrapper">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/coin/:id" element={<CoinPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
         </Routes>
       </div>
 
-      {/* footer */}
       <FooterComponent />
     </div>
   );
 }
 
 export default App;
-
-// Routes
-// /
-// /faq
-// /about-us
-// /contact-us

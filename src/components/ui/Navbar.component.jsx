@@ -6,7 +6,9 @@ const NavbarComponent = () => {
   const btnToggleRef = useRef();
 
   const toggleMenu = () => {
-    btnToggleRef.current.click();
+    if (window.innerWidth < 992) {
+      btnToggleRef.current.click();
+    }
   };
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -57,9 +59,3 @@ const NavbarComponent = () => {
 };
 
 export default NavbarComponent;
-
-// Routes
-// /
-// /faq
-// /about-us
-// /contact-us
