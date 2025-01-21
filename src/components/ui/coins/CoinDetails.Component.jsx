@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const CoinDetailsComponent = ({ coin }) => {
@@ -41,7 +40,10 @@ const CoinDetailsComponent = ({ coin }) => {
                   {coin.market_data.market_cap.usd?.toLocaleString() || "N/A"}
                 </span>
                 <span className="ms-2 badge bg-success">
-                  {coin.market_data.market_cap_change_percentage_24h?.toFixed(2) || "0.00"}%
+                  {coin.market_data.market_cap_change_percentage_24h?.toFixed(
+                    2
+                  ) || "0.00"}
+                  %
                 </span>
               </h4>
             </div>
@@ -51,7 +53,9 @@ const CoinDetailsComponent = ({ coin }) => {
               <h4>
                 Current Price:
                 <span className="ms-2">
-                  {coin.market_data.current_price.usd?.toLocaleString() || "N/A"}$$
+                  {coin.market_data.current_price.usd?.toLocaleString() ||
+                    "N/A"}
+                  $$
                 </span>
               </h4>
             </div>
@@ -71,16 +75,26 @@ const CoinDetailsComponent = ({ coin }) => {
               <tbody className="table-group-divider">
                 <tr>
                   <td>
-                    {coin.market_data?.price_change_percentage_24h?.toFixed(2) || "0.00"}%
+                    {coin.market_data?.price_change_percentage_24h?.toFixed(
+                      2
+                    ) || "0.00"}
+                    %
                   </td>
                   <td>
-                    {coin.market_data?.price_change_percentage_7d?.toFixed(2) || "0.00"}%
+                    {coin.market_data?.price_change_percentage_7d?.toFixed(2) ||
+                      "0.00"}
+                    %
                   </td>
                   <td>
-                    {coin.market_data?.price_change_percentage_30d?.toFixed(2) || "0.00"}%
+                    {coin.market_data?.price_change_percentage_30d?.toFixed(
+                      2
+                    ) || "0.00"}
+                    %
                   </td>
                   <td>
-                    {coin.market_data?.price_change_percentage_1y?.toFixed(2) || "0.00"}%
+                    {coin.market_data?.price_change_percentage_1y?.toFixed(2) ||
+                      "0.00"}
+                    %
                   </td>
                 </tr>
               </tbody>
@@ -127,7 +141,8 @@ const CoinDetailsComponent = ({ coin }) => {
               <h4>
                 Circulating Supply:
                 <span className="ms-2">
-                  {coin.market_data.circulating_supply?.toLocaleString() || "N/A"}
+                  {coin.market_data.circulating_supply?.toLocaleString() ||
+                    "N/A"}
                 </span>
               </h4>
             </div>
