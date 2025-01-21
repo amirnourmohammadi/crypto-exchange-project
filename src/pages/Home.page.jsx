@@ -10,7 +10,7 @@ const HomePage = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    setLoading(true); 
+    setLoading(true);
     axios(baseUrl)
       .then((Response) => {
         setLoading(false);
@@ -32,7 +32,16 @@ const HomePage = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-12"> {loading ? <Spinner />: error !== "" ? <h1>{error}</h1> : <CoinsComponent data={  data  } /> }</div>
+        <div className="col-12">
+          {" "}
+          {loading ? (
+            <Spinner />
+          ) : error !== "" ? (
+            <h1>{error}</h1>
+          ) : (
+            <CoinsComponent data={data} />
+          )}
+        </div>
       </div>
 
       {/* <Spinner /> */}
