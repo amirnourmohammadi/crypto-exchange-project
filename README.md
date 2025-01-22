@@ -4,4 +4,4 @@
 
 ### Netlify link
 
-[Link] (https://crypto-exchange-project.netlify.app/)
+[Link](https://crypto-exchange-project.netlify.app/)
