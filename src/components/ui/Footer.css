@@ -1,8 +1,45 @@
-.footer{
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  height: 60px;
+  font-size: 1.2rem;
+}
+
+.footer span {
+  margin-right: 15px;
+}
+
+.footer .ms-2 {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+/* .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    background-color: rgb(46, 45, 45);
-    height: 40px;
-}
+    background: var(--background-dark);
+    color: var(--text-light);
+    height: 60px;
+  }
+  
+  .footer span {
+    font-size: 1rem;
+  }
+  
+  .footer .ms-2 {
+    color: var(--text-muted);
+    margin-left: 5px;
+  }
+   */

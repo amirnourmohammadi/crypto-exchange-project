@@ -1,0 +1,47 @@
+ .coin-details-container {
+   padding: 30px;
+   background-color: #f8f9fa;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ .coin-header {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+
+ .coin-image {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+ }
+
+ .coin-details-row {
+   margin-bottom: 20px;
+ }
+
+
+ h4 {
+   margin: 10px 0;
+ }
+
+ .price {
+   color: #28a745;
+   font-weight: bold;
+ }
+
+ .positive-change {
+   color: green;
+ }
+
+ .negative-change {
+   color: red;
+ }
+
+ .details-coin {
+   background: linear-gradient(90deg, #4A148C, #FFD700);
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 2rem;
+   color: #fff;
+ }

@@ -24,9 +24,9 @@ const HomePage = () => {
 
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-12 text-center">
-          <h1>crypto exhchange</h1>
+      <div className="d-flex flex-column justify-content-center align-items-center text-center">
+        <div className="col-12 text-center m-5 justify-content-center align-items-center">
+          <h1 className="gradient-text">crypto exhchange</h1>
           <h4>a place for crypto trading</h4>
           <h4>do not for risk managment</h4>
         </div>

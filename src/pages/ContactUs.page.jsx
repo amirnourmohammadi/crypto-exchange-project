@@ -4,7 +4,7 @@ const ContactUsPage = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-12 bg-info p-3 rounded">
+        <div className="col-12 p-3 rounded" style={{ backgroundColor: "#6A0DAD", color: "white" }}>
           <h3>Contact Us</h3>
         </div>
       </div>

@@ -8,18 +8,18 @@ const CoinDetailsComponent = ({ coin }) => {
   console.log(coin);
 
   return (
-    <div className="container">
+    <div className="container m-5">
       <div className="row coin-details-row">
         <div className="col-12">
-          <h2>Details of {coin.id}</h2>
+          <h2 className="details-coin">Details of {coin.id}</h2>
         </div>
       </div>
-      <div className="row coin-details-row">
-        <div className="col-12 col-md-6">
+      <div className="row coin-details-row mt-3">
+        <div className="col-12 col-md-6 mt-3">
           {coin.image && coin.image.small && (
             <div>
               <img src={coin.image.small} alt="img" />
-              <h4>
+              <h4 className="mt-3">
                 {coin.name} ({coin.symbol})
               </h4>
             </div>
@@ -125,7 +125,7 @@ const CoinDetailsComponent = ({ coin }) => {
             </div>
           )}
         </div>
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 pb-5">
           {coin.market_data && (
             <div>
               <h4>
@@ -152,7 +152,7 @@ const CoinDetailsComponent = ({ coin }) => {
       <div className="row coin-details-row">
         <div className="col-12">
           {coin.description?.en && (
-            <p
+            <p className="mt-3"
               dangerouslySetInnerHTML={{
                 __html: coin.description.en,
               }}

@@ -5,6 +5,9 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import "./theme.css";
+import "./pages/Home.page.css";
+import "./components/ui/coins/coinDetails.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -1,11 +1,45 @@
 .logo-symbol {
-    width: 40px;
-    height: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* لوگو به صورت گرد */
 }
 
-.coin-details-row {
-    background-color: rgba(67, 166, 252, 0.658);
-    margin: 1rem;
-    padding: 0.5rem;
-    border-radius: 12px;
+.price {
+  color: #28a745;
+  /* سبز برای قیمت‌های مثبت */
+  font-weight: bold;
+}
+
+.negative-change {
+  color: red;
+  /* قرمز برای تغییرات منفی */
+}
+
+.positive-change {
+  color: green;
+  /* سبز برای تغییرات مثبت */
+}
+
+.volume,
+.market-cap {
+  color: #17a2b8;
+  /* رنگ آبی برای حجم و مارکت کپ */
+}
+
+.no-data {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+/* استایل جدید برای لینک‌ها */
+.nav-link {
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
 }

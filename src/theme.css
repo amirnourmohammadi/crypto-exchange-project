@@ -1,0 +1,128 @@
+/* :root { */
+  --color-primary: #6A0DAD;
+  /* بنفش اصلی */
+  --color-secondary: #B19CD9;
+  /* بنفش ملایم */
+  --color-accent: #FFD700;
+  /* طلایی برای جذابیت */
+  --color-background: #F3E5F5;
+  /* پس‌زمینه بنفش روشن */
+  --color-text: #4A235A;
+  /* بنفش تیره برای متن */
+/* } */
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EDE7F6;
+  color: #333333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #4A148C, #FFD700);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-icon {
+  margin-right: 0.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  color: #4A148C;
+}
+
+.main-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Table Styles */
+.table-container {
+  margin: 2rem auto;
+  width: 90%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.crypto-table th, .crypto-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.crypto-table th {
+  background: #4A148C;
+  color: #fff;
+}
+
+.crypto-table tr:hover {
+  background-color: #F3E5F5;
+}
+
+.crypto-logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+/* Footer */
+.footer {
+  background: #4A148C;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+a {
+  color: #4A148C;
+  text-decoration: none;
+}
+a:hover {
+  color: #FFD700;
+}
